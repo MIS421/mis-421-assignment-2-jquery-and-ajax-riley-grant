@@ -5,12 +5,34 @@
 <head>
 
   <link rel="stylesheet" href="./style.css">
+    <title>SEARCH PARTY</title>
 
 </head>
 
 <body>
 
-  <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <h1 class="center">SEARCH PARTY</h1>
+
+    <label style="color:white" for="Search">Search For:</label>
+    <input type="text" id="Query" name="Search">
+
+    <button style="top:2px" type="submit">Click to Search</button>
+
+
+    <button type="button"
+            onclick="document.getElementById('demo').innerHTML = Date()">
+        Click to Display Current Time
+    </button>
+
+    <p style="color:white; font-size:large;"id="demo"></p>
+
+
+    <div id="searchResults"></div>
+
+    <div id="time"></div>
+
+  
 
 </body>
 

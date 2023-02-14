@@ -28,4 +28,11 @@ function apiSearch() {
     .fail(function () {
       alert("error");
     });
+
+    function showTime()
+    {
+        var my_time = new Date();
+        document.getElementById('display').innerHTML = my_time;
+        document.write(my_time);
+    }
 }
