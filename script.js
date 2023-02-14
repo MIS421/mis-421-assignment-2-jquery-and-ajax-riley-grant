@@ -10,9 +10,9 @@ function apiSearch() {
   };
 
   $.ajax({
-      url: 'my-api-url' + $.param(params),
+      url: 'https://management.azure.com/' + $.param(params),
       beforeSend: function (xhrObj) {
-        xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "my-api-key");
+          xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "4c5e4f48ac974095bc828a644951581a");
       },
       type: "GET",
     })
@@ -35,4 +35,15 @@ function apiSearch() {
         document.getElementById('display').innerHTML = my_time;
         document.write(my_time);
     }
+
+    function searchButton()
+    {
+
+    }
+
+    function changeBackground()
+    {
+    }
+
+
 }
