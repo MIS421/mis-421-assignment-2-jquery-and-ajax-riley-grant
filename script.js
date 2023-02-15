@@ -1,6 +1,9 @@
 var len;
 var results = '';
 
+
+
+
 function apiSearch() {
   var params = {
     "q": $("#query").val(),
@@ -29,21 +32,18 @@ function apiSearch() {
       alert("error");
     });
 
-    function showTime()
-    {
-        var my_time = new Date();
-        document.getElementById('display').innerHTML = my_time;
-        document.write(my_time);
-    }
 
     function searchButton()
     {
-
+        
     }
 
     function changeBackground()
     {
+        var background = 
     }
+
+
 
 
 }
