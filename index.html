@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha384-Ft/vb48LwsAEtgltj7o+6vtS2esTU9PCpDqcXs4OCVQFZu5BqprHtUCZ4kjK+bpE" crossorigin="anonymous"></script>
 
     
-    <h1 class="center" >SEARCH PARTY</h1>
+    <h1 class="center">SEARCH PARTY</h1>
     <div id="Title">
         <button style="margin:auto; display:flex; justify-content:center;text-align:center;display:grid; font-size:20px;" onclick="backgroundChange();">Search Party!</button>
     </div>
@@ -28,16 +28,21 @@
         }
     </script>
 
-    <label style="color:white; font-size:20px;" for="Search">Search For:</label>
-    <input type="text" id="Query" name="Search">
+    
 
-    <button style="top:2px" type="submit">Click to Search</button>
+    <div class="form-group">
+        <label style="color:white; font-size:20px;" for="Search">Search For:</label>
+        <input type="text" id="Query" name="Search">
+    </div>
+    <div class="form-group">
+        <button style="top:2px; margin:20px;font-family:Impact,fantasy; font-size:medium" type="submit">Click to Search</button>
+    </div>
 
 
 
 
-    <button type="button" onclick="document.getElementById('time').innerHTML = Date()"> Click to Display Current Time </button>
-    <p id="time" style="color:white; font-size:large"></p>
+    <button style="font-family:Impact,fantasy; font-size:medium" type="button" onclick="document.getElementById('time').innerHTML = Date()"> Click to Display Current Time </button>
+    <p id="time" style="color:white; font-size:large; font-family:Impact,fantasy"></p>
 
 
 
