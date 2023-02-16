@@ -33,9 +33,4 @@ function apiSearch() {
     });
 
 
-
-
-
-
-
 }
