@@ -7,20 +7,28 @@
   <link rel="stylesheet" href="./style.css">
 
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" integrity="sha384-s5lqL1NMu1TdDS/75EsR2IKqj5g2SbplE63nRqwT70/kcm2uFLqKGOCp1phJ2ENd" crossorigin="anonymous">
-
+    <title>SEARCH PARTY</title>
 
 </head>
 
 <body>
 
-    <script type="text/javascript" src="./script.js"></script>
+
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="./js/script.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha384-Ft/vb48LwsAEtgltj7o+6vtS2esTU9PCpDqcXs4OCVQFZu5BqprHtUCZ4kjK+bpE" crossorigin="anonymous"></script>
- 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 
+
+    <!--HEADER-->
     <h1 class="center">SEARCH PARTY</h1>
+
+
+    <!--CHANGE BACKGROUND-->
     <div id="Title">
-        <button style="margin:auto; display:flex; justify-content:center;text-align:center;display:grid; font-size:20px;" onclick="backgroundChange();">Search Party!</button>
+        <button style="color: white; background-color: deeppink; margin:auto; display: flex; justify-content: center; text-align: center; display: grid; font-size: 20px;" onclick="backgroundChange();">Search Party!</button>
     </div>
     <script>
         function backgroundChange() {
@@ -32,39 +40,38 @@
 
 
 
+
+    <!--SEARCH BUTTON-->
     <div class="form-group">
-        <label style="color:white; font-size:20px;" for="Search">Search For:</label>
-        <input type="text" id="Query" name="Search">
+        <label style="color:white; font-size:35px;" for="Search">Search For:</label>
+        <input id="Search" name="Search"></input>
     </div>
+
+
     <div class="form-group">
-        <button style="top:2px; margin:20px;font-family:Impact,fantasy; font-size:medium" type="submit">Click to Search</button>
+        <button style="top:2px; margin:20px;font-family:Impact,fantasy; font-size:medium; color:white; background-color:deeppink;" value="Search" onclick="apiSearch()" class="btn btn-danger">Click to Search</button>
+        <div style="visibility:hidden" id="searchResults"></div>
     </div>
 
 
 
 
-    <button style="font-family:Impact,fantasy; font-size:medium" type="button" onclick="document.getElementById('time').innerHTML = Date()"> Click to Display Current Time </button>
+
+
+    <!--CURRENT TIME COMMAND-->
+    <button style="font-family: Impact,fantasy; font-size: medium; color: white; background-color: deeppink" type="button" onclick="document.getElementById('time').innerHTML = Date()"> Click to Display Current Time </button>
 
     <p id="time" title="Current Time" style="color:white; font-size:large; font-family:Impact,fantasy"></p>
 
 
 
-    <div id="dialog" title="Basic dialog">
-        <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
-        <script>
-            $(function () {
-                $("#dialog").dialog();
-            });
-        </script>
-    </div>
 
 
+    <!--SEARCH RESULTS-->
+    <!--<div style="visibility:hidden" id="searchResults"></div>-->
 
 
-
-
-    <div style="visibility:hidden" id="searchResults"></div>
-
+    <!--TIME RESULTS-->
     <div style="visibility:hidden" id="time"></div>
 
 
