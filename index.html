@@ -17,7 +17,7 @@
 
 
     <!--SCRIPTS-->
-    
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha384-Ft/vb48LwsAEtgltj7o+6vtS2esTU9PCpDqcXs4OCVQFZu5BqprHtUCZ4kjK+bpE" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
@@ -26,7 +26,7 @@
 
     <!--Dialog Box-->
     <!--HEADER-->
-    <h1 class="center">SEARCH PARTY</h1>
+    <h1 class="center">WELCOME TO THE SEARCH PARTY !</h1>
 
 
     <!--CHANGE BACKGROUND-->
@@ -47,9 +47,13 @@
     <!--SEARCH BUTTON-->
     <!--test search-->
 
-    <h1 for="query" class="label label-default">Search Here</h1>
+    <h1 for="query" class="label label-default" style="font-size:25px; color:white;">ENTER SEARCH</h1>
     <textarea id="query" name="query"></textarea>
-    <button value="Search" onclick="apiSearch()" class="btn btn-danger">enfenf</button>
+
+    <div class="form-group">
+        <button style="font-family: Impact,fantasy; font-size: medium; color: white; background-color: deeppink" value="Search" onclick="apiSearch()" class="btn btn-danger">CLICK TO SEARCH</button>
+    </div>
+
     <div id="searchResults"></div>
 
 
@@ -77,7 +81,7 @@
             });
         }
     </script>
-    <button id="timeDiv" style="font-family: Impact,fantasy; font-size: medium; color: white; background-color: deeppink" onclick="getTime();"> get TIME </button>
+    <button id="timeDiv" style="font-family: Impact,fantasy; font-size: medium; color: white; background-color: deeppink; margin-top:10px;" onclick="getTime();"> TIME </button>
 
 
 
