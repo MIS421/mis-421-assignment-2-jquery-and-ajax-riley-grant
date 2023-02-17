@@ -1,0 +1,7 @@
+C:\Users\HP\Source\Repos\mis-421-assignment-2-jquery-and-ajax-riley-grant\SP2023-Assignment2-rggrant1\obj\Release\net6.0\PubTmp\Out\SP2023-Assignment2-rggrant1.exe
+C:\Users\HP\Source\Repos\mis-421-assignment-2-jquery-and-ajax-riley-grant\SP2023-Assignment2-rggrant1\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\HP\Source\Repos\mis-421-assignment-2-jquery-and-ajax-riley-grant\SP2023-Assignment2-rggrant1\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\HP\Source\Repos\mis-421-assignment-2-jquery-and-ajax-riley-grant\SP2023-Assignment2-rggrant1\obj\Release\net6.0\PubTmp\Out\SP2023-Assignment2-rggrant1.dll
+C:\Users\HP\Source\Repos\mis-421-assignment-2-jquery-and-ajax-riley-grant\SP2023-Assignment2-rggrant1\obj\Release\net6.0\PubTmp\Out\SP2023-Assignment2-rggrant1.deps.json
+C:\Users\HP\Source\Repos\mis-421-assignment-2-jquery-and-ajax-riley-grant\SP2023-Assignment2-rggrant1\obj\Release\net6.0\PubTmp\Out\SP2023-Assignment2-rggrant1.runtimeconfig.json
+C:\Users\HP\Source\Repos\mis-421-assignment-2-jquery-and-ajax-riley-grant\SP2023-Assignment2-rggrant1\obj\Release\net6.0\PubTmp\Out\SP2023-Assignment2-rggrant1.pdb

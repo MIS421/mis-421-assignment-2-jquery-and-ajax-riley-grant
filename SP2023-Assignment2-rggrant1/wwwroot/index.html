@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" integrity="sha384-s5lqL1NMu1TdDS/75EsR2IKqj5g2SbplE63nRqwT70/kcm2uFLqKGOCp1phJ2ENd" crossorigin="anonymous">
+
+    <title>SEARCH PARTY</title>
+
+
+</head>
+
+<body>
+
+
+    <!--SCRIPTS-->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha384-Ft/vb48LwsAEtgltj7o+6vtS2esTU9PCpDqcXs4OCVQFZu5BqprHtUCZ4kjK+bpE" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL" crossorigin="anonymous"></script>
+
+
+    <!--Dialog Box-->
+    <!--HEADER-->
+    <h1 class="center">WELCOME TO THE SEARCH PARTY !</h1>
+
+
+    <!--CHANGE BACKGROUND-->
+    <div id="Title">
+        <button style="color: white; background-color: deeppink; margin:auto; display: flex; justify-content: center; text-align: center; display: grid; font-size: 20px;" onclick="backgroundChange();">Search Party!</button>
+    </div>
+    <script>
+        function backgroundChange() {
+            document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1562077790-5fab0c2e49eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbmZldHRpfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')";
+            document.body.style.backgroundRepeat = "repeat";
+            document.body.style.backgroundSize = "cover";
+        }
+    </script>
+
+
+
+
+    <!--SEARCH BUTTON-->
+    <!--test search-->
+
+    <h1 for="query" class="label label-default" style="font-size:25px; color:white;">ENTER SEARCH</h1>
+    <textarea id="query" name="query"></textarea>
+
+    <div class="form-group">
+        <button style="font-family: Impact,fantasy; font-size: medium; color: white; background-color: deeppink" value="Search" onclick="apiSearch()" class="btn btn-danger">CLICK TO SEARCH</button>
+    </div>
+
+    <div id="searchResults"></div>
+
+
+
+
+    <!--CURRENT TIME COMMAND-->
+
+
+    <script>
+        function getTime() {
+            var timeDiv = document.getElementById("timeDiv");
+            timeDiv.style.visibility = "visible";
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var formatTime = (hours < 10 ? "0" + hours : hours) + ":" + (minutes < 10 ? "0" + minutes : minutes);
+            $(timeDiv).html(formatTime).dialog({
+                title: "Current Time",
+                modal: true,
+                buttons: {
+                    "Close": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+    </script>
+    <button id="timeDiv" style="font-family: Impact,fantasy; font-size: medium; color: white; background-color: deeppink; margin-top:10px;" onclick="getTime();"> TIME </button>
+
+
+
+
+    <!--SEARCH RESULTS-->
+    <!--TIME RESULTS-->
+
+
+
+    <script type="text/javascript" src="./js/script.js"></script>
+
+</body>
+
+</html>
